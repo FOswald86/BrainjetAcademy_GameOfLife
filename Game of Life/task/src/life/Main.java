@@ -10,15 +10,14 @@ public class Main {
         int generations = in.nextInt();
 
         Universe universe = new Universe(size, seed);
-        universe.populate();
+        universe.populate(universe);
         Universe universeNextGen = new Universe(size);
 
         while (generations > 0) {
-            universe.evolve(universe);
+            universeNextGen = universe.evolve(universe);
             generations--;
-            universe.print();
+            universe.print(universeNextGen);
         }
-
-
+        universe.print(universeNextGen);
     }
 }

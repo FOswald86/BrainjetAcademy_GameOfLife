@@ -228,15 +228,12 @@ files:
         }
     }
   learner_created: true
-- name: src/life/Cell.java
-  visible: true
-  learner_created: true
 feedback_link: https://hyperskill.org/projects/54/stages/295/implement#comment
 status: Failed
 feedback:
   message: "Wrong answer in test #2\n\nYour output is wrong!\n\nPlease find below\
     \ the output of your program during this failed test.\nNote that the &#39;&gt;&#39;\
     \ character indicates the beginning of the input line.\n\n---\n\n&gt; 8 1 10\n\
-    \       O\n       O\n        \n       O\n       O\n        \n       O\nOO  O"
-  time: Sun, 03 Oct 2021 16:09:03 UTC
+    \  O O   \n OO O   \nO O O OO\n  O OO O\n O O    \nOO  OOOO\n  O O O \n OO O"
+  time: Sun, 03 Oct 2021 19:55:13 UTC
 record: -1

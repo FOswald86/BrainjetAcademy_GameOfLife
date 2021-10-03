@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="GameOfLifeTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-10-03T16:09:02" hostname="DESKTOP-6TB0FU0" time="0.094">
+<testsuite name="GameOfLifeTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-10-03T19:55:13" hostname="DESKTOP-6TB0FU0" time="0.09">
   <properties/>
-  <testcase name="start" classname="GameOfLifeTest" time="0.094">
-    <failure message="java.lang.AssertionError: Wrong answer in test #2&#10;&#10;Your output is wrong!&#10;&#10;Please find below the output of your program during this failed test.&#10;Note that the '&gt;' character indicates the beginning of the input line.&#10;&#10;---&#10;&#10;&gt; 8 1 10&#10;       O&#10;       O&#10;        &#10;       O&#10;       O&#10;        &#10;       O&#10;OO  O" type="java.lang.AssertionError">java.lang.AssertionError: Wrong answer in test #2
+  <testcase name="start" classname="GameOfLifeTest" time="0.09">
+    <failure message="java.lang.AssertionError: Wrong answer in test #2&#10;&#10;Your output is wrong!&#10;&#10;Please find below the output of your program during this failed test.&#10;Note that the '&gt;' character indicates the beginning of the input line.&#10;&#10;---&#10;&#10;&gt; 8 1 10&#10;  O O   &#10; OO O   &#10;O O O OO&#10;  O OO O&#10; O O    &#10;OO  OOOO&#10;  O O O &#10; OO O" type="java.lang.AssertionError">java.lang.AssertionError: Wrong answer in test #2
 
 Your output is wrong!
 
@@ -12,14 +12,14 @@ Note that the '&gt;' character indicates the beginning of the input line.
 ---
 
 &gt; 8 1 10
-       O
-       O
-        
-       O
-       O
-        
-       O
-OO  O
+  O O   
+ OO O   
+O O O OO
+  O OO O
+ O O    
+OO  OOOO
+  O O O 
+ OO O
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.hyperskill.hstest.stage.StageTest.start(StageTest.java:155)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -81,14 +81,14 @@ OOO
 ?[1;31m
 Start test 2?[0m
 > 8 1 10
-       O
-       O
-        
-       O
-       O
-        
-       O
-OO  O   
+  O O   
+ OO O   
+O O O OO
+  O OO O
+ O O    
+OO  OOOO
+  O O O 
+ OO O   
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
