@@ -11,15 +11,14 @@ public class Main {
 
         Universe universe = new Universe(size, seed);
         universe.populate();
-        Universe universeNextGen = new Universe(size, seed);
-
-
+        Universe universeNextGen = new Universe(size);
 
         while (generations > 0) {
-            universeNextGen.evolve(universe, universeNextGen);
+            universe.evolve(universe);
+            generations--;
+            universe.print();
         }
 
-        universe.print();
 
     }
 }

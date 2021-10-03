@@ -234,11 +234,9 @@ files:
 feedback_link: https://hyperskill.org/projects/54/stages/295/implement#comment
 status: Failed
 feedback:
-  message: "Exception in test #2\n\njava.lang.ArrayIndexOutOfBoundsException: Index\
-    \ -1 out of bounds for length 8\r\n\tat life.Universe.evolve(Universe.java:26)\r\
-    \n\tat life.Main.main(Main.java:19)\n\nPlease find below the output of your program\
-    \ during this failed test.\nNote that the &#39;&gt;&#39; character indicates the\
-    \ beginning of the input line.\n\n---\n\n&gt; 8 1 10\nO      O\nOO  O OO\nOOO\
-    \  O  \n  OO OOO\nO  O O O\nO O  OO \nOO    OO\nOO  O"
-  time: Sat, 02 Oct 2021 17:23:31 UTC
+  message: "Wrong answer in test #2\n\nYour output is wrong!\n\nPlease find below\
+    \ the output of your program during this failed test.\nNote that the &#39;&gt;&#39;\
+    \ character indicates the beginning of the input line.\n\n---\n\n&gt; 8 1 10\n\
+    \       O\n       O\n        \n       O\n       O\n        \n       O\nOO  O"
+  time: Sun, 03 Oct 2021 16:09:03 UTC
 record: -1
