@@ -2,22 +2,22 @@ package life;
 import java.util.Scanner;
 
 public class Main {
-    private static final Scanner in = new Scanner(System.in);
-
     public static void main(String[] args) {
-        int size = in.nextInt();
-        long seed = in.nextLong();
-        int generations = in.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int size = scanner.nextInt();
+        long seed = scanner.nextLong();
+        int generations = scanner.nextInt();
+        scanner.close();
 
         Universe universe = new Universe(size, seed);
         universe.populate(universe);
-        Universe universeNextGen = new Universe(size);
 
         while (generations > 0) {
-            universeNextGen = universe.evolve(universe);
+            Universe universeNextGen = new Universe(size);
+            universeNextGen = universe.copyUniverse(universe, universeNextGen);
+            universe = universe.evolve(universe, universeNextGen);
             generations--;
-            universe.print(universeNextGen);
         }
-        universe.print(universeNextGen);
+        universe.print(universe);
     }
 }

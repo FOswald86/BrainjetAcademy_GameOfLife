@@ -18,12 +18,26 @@ class Universe {
         this.population = new boolean[size][size];
     }
 
-    public Universe evolve(Universe universe) {
+    public Universe copyUniverse(Universe universe, Universe universeNextGen) {
+        for (int i = 0; i < universe.population.length; i++) {
+            for (int j = 0; j < universe.population.length; j++) {
+                universeNextGen.population[i][j] = universe.population[i][j];
+            }
+        }
+        return universeNextGen;
+    }
+
+    public Universe evolve(Universe universe, Universe universeNextGen) {
         // find neighbors
         int length = universe.population.length - 1;
         for (int row = 0; row < universe.population.length; row++) {
             for (int column = 0; column < universe.population.length; column++) {
                 int neighborsCount = 0;
+
+                // coordinate idea
+                /*
+                universe.population[row == 0 ? length : row - 1][column == 0 ? length : column - 1]
+                 */
                 // above row left
                 if (universe.population[row == 0 ? length : row - 1][column == 0 ? length : column - 1]) {
                     neighborsCount++;
@@ -64,21 +78,17 @@ class Universe {
                 // A live cell survives if it has two or three live neighbors; otherwise, it dies of boredom (<2) or overpopulation (>3).
                 // A dead cell is reborn if it has exactly three live neighbors.
                 if (universe.population[row][column]) {
-                    if (neighborsCount < 2 || neighborsCount > 3) {
-                        universe.population[row][column] = false;
-                    }
+                    universeNextGen.population[row][column] = neighborsCount >= 2 && neighborsCount <= 3;
                 } else {
-                    if (neighborsCount == 3) {
-                        universe.population[row][column] = true;
-                    }
+                    universeNextGen.population[row][column] = neighborsCount == 3;
                 }
             }
         }
-        return universe;
+        return universeNextGen;
     }
 
     public void populate(Universe universe) {
-        Random random = new Random(seed);
+        Random random = new Random(universe.seed);
         for (int i = 0; i < population.length; i++) {
             for (int j = 0; j < population.length; j++) {
                 universe.population[i][j] = random.nextBoolean();
@@ -87,11 +97,12 @@ class Universe {
     }
 
     public void print(Universe universe) {
-        for (int i = 0; i < universe.population.length; i++) {
-            for (int j = 0; j < universe.population.length; j++) {
-                System.out.print(universe.population[i][j] ? "O" : " ");
+        for (boolean[] row : universe.population) {
+            for (boolean alive : row) {
+                System.out.print(alive ? "O" : " ");
             }
             System.out.println();
         }
+        System.out.println();
     }
 }
