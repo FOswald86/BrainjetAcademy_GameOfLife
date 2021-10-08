@@ -88,7 +88,7 @@ class Universe {
     }
 
     public void populate(Universe universe) {
-        Random random = new Random(universe.seed);
+        Random random = new Random();
         for (int i = 0; i < population.length; i++) {
             for (int j = 0; j < population.length; j++) {
                 universe.population[i][j] = random.nextBoolean();
@@ -104,5 +104,17 @@ class Universe {
             System.out.println();
         }
         System.out.println();
+    }
+
+    public int getAliveCount(Universe universe) {
+        int count = 0;
+        for (int i = 0; i < population.length; i++) {
+            for (int j = 0; j < population.length; j++) {
+                if (population[i][j]) {
+                    count++;
+                }
+            }
+        }
+        return count;
     }
 }
