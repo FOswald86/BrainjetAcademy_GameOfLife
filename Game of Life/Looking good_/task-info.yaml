@@ -207,6 +207,18 @@ files:
 - name: src/life/GameOfLife.java
   visible: true
   learner_created: true
+- name: src/life/Grid.java
+  visible: true
+  learner_created: true
+- name: src/life/Generation.java
+  visible: true
+  learner_created: true
+- name: src/life/Controller.java
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/54/stages/298/implement#comment
-status: Unchecked
-record: -1
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 09 Oct 2021 17:03:40 UTC
+record: 4

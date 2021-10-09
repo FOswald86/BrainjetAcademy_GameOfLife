@@ -15,3 +15,4 @@ content:
 - Lambda expressions
 - Method references
 - Functional interfaces
+- Hierarchy of exceptions
