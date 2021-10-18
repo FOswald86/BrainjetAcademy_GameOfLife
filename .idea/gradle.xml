@@ -122,6 +122,14 @@
             <option value="$PROJECT_DIR$/Topics/States of a thread/A thread in NEW state" />
             <option value="$PROJECT_DIR$/Topics/States of a thread/Print name of TERMINATED thread" />
             <option value="$PROJECT_DIR$/Topics/States of a thread/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Switch statement/A simple calculator" />
+            <option value="$PROJECT_DIR$/Topics/Switch statement/Direction" />
+            <option value="$PROJECT_DIR$/Topics/Switch statement/Floor-space of the room" />
+            <option value="$PROJECT_DIR$/Topics/Switch statement/From string to a number" />
+            <option value="$PROJECT_DIR$/Topics/Switch statement/Harry Potter" />
+            <option value="$PROJECT_DIR$/Topics/Switch statement/Shape" />
+            <option value="$PROJECT_DIR$/Topics/Switch statement/Test learners" />
+            <option value="$PROJECT_DIR$/Topics/Switch statement/Theory" />
             <option value="$PROJECT_DIR$/Topics/The for-loop/Arithmetic average" />
             <option value="$PROJECT_DIR$/Topics/The for-loop/Fizz Buzz" />
             <option value="$PROJECT_DIR$/Topics/The for-loop/Grades" />
@@ -133,6 +141,10 @@
             <option value="$PROJECT_DIR$/Topics/The for-loop/The roots of an equation" />
             <option value="$PROJECT_DIR$/Topics/The for-loop/The sum of integers from a to b" />
             <option value="$PROJECT_DIR$/Topics/The for-loop/Theory" />
+            <option value="$PROJECT_DIR$/Topics/The while and do-while loops/Collatz conjecture" />
+            <option value="$PROJECT_DIR$/Topics/The while and do-while loops/The largest element of a sequence" />
+            <option value="$PROJECT_DIR$/Topics/The while and do-while loops/The length of the sequence" />
+            <option value="$PROJECT_DIR$/Topics/The while and do-while loops/Theory" />
             <option value="$PROJECT_DIR$/Topics/Thread management/Calculate the number of distinct characters" />
             <option value="$PROJECT_DIR$/Topics/Thread management/Ordering the execution of threads" />
             <option value="$PROJECT_DIR$/Topics/Thread management/Summing with threads" />
